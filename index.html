@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeltsin Alizo (YinHeaven) - Backend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="theme-toggle" aria-label="Cambiar tema">
+        <span class="toggle-icon">🌙</span>
+    </button>
+
+    <!-- NUEVO: Selector de idiomas -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <div class="container">
+        <!-- Columna Izquierda - Perfil fijo -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="avatar">
+                    <span class="avatar-initials">YA</span>
+                </div>
+                <h1 class="name">Yeltsin Alizo</h1>
+                <h2 class="alias">@YinHeaven</h2>
+                <p class="location" data-i18n="location">📍 Brasil - PR - Araucaria </p>
+                
+                <div class="contact">
+                    <h3 data-i18n="contact_title">Contacto</h3>
+                    <a href="https://wa.me/5575981450641?text=Hola%20Yeltsin%20(YinHeaven)%2C%20acabo%20de%20ver%20tu%20CV%20y%20estamos%20muy%20interesados%20en%20tu%20perfil%20para%20la%20posici%C3%B3n%20Backend.%20%C2%BFCu%C3%A1ndo%20podr%C3%ADamos%20agendar%20una%20entrevista%3F" 
+                       class="contact-item phone-click" target="_blank">
+                        <span class="contact-icon">📱</span>
+                        +55 75 98145-0641
+                    </a>
+                    <a href="mailto:alizoyeltsin@gmail.com" class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        alizoyeltsin@gmail.com
+                    </a>
+                    <a href="https://github.com/YinHeaven" class="contact-item" target="_blank">
+                        <span class="contact-icon">🐙</span>
+                        github.com/YinHeaven
+                    </a>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h3 data-i18n="skills_title">Stack Técnico</h3>
+                <div class="skill-group">
+                    <h4 data-i18n="backend">Backend</h4>
+                    <div class="skill-badges">
+                        <span class="skill-badge" data-tooltip="Experiencia en APIs y servidores">Node.js</span>
+                        <span class="skill-badge" data-tooltip="FastAPI, Flask, Django">Python</span>
+                        <span class="skill-badge" data-tooltip="APIs RESTful">Express.js</span>
+                        <span class="skill-badge" data-tooltip="Microframeworks">FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4 data-i18n="databases">Bases de Datos</h4>
+                    <div class="skill-badges">
+                        <span class="skill-badge" data-tooltip="Consultas básicas y modelado">SQL</span>
+                        <span class="skill-badge" data-tooltip="MongoDB, Mongoose">NoSQL</span>
+                        <span class="skill-badge" data-tooltip="ORM Python">SQLAlchemy</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4 data-i18n="devops">DevOps y Herramientas</h4>
+                    <div class="skill-badges">
+                        <span class="skill-badge" data-tooltip="Git CLI avanzado">Git</span>
+                        <span class="skill-badge" data-tooltip="CI/CD básico">GitHub Actions</span>
+                        <span class="skill-badge" data-tooltip="Contenedores">Docker</span>
+                        <span class="skill-badge" data-tooltip="Pruebas unitarias">PyTest</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4 data-i18n="ia">IA y Automatización</h4>
+                    <div class="skill-badges">
+                        <span class="skill-badge" data-tooltip="Integración de AI Agents">AI Agents</span>
+                        <span class="skill-badge" data-tooltip="Skills Agents">Skills Agents</span>
+                        <span class="skill-badge" data-tooltip="Model Context Protocol">MCP</span>
+                        <span class="skill-badge" data-tooltip="Documentación IA">LLMs.txt</span>
+                        <span class="skill-badge" data-tooltip="Arquitectura IA">agents.md</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="languages">
+                <h3 data-i18n="languages_title">Idiomas</h3>
+                <div class="language-item">
+                    <span data-i18n="spanish">Español</span>
+                    <span class="language-level" data-i18n="native">Nativo</span>
+                    <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
+                </div>
+                <div class="language-item">
+                    <span data-i18n="portuguese">Portugués</span>
+                    <span class="language-level" data-i18n="bilingual">Bilingüe</span>
+                    <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                </div>
+                <div class="language-item">
+                    <span data-i18n="english">Inglés</span>
+                    <span class="language-level" data-i18n="technical">Técnico</span>
+                    <div class="progress-bar"><div class="progress" style="width: 60%"></div></div>
+                </div>
+            </div>
+
+            <div class="education">
+                <h3 data-i18n="education_title">Formación</h3>
+                <div class="education-item">
+                    <h4 data-i18n="education_degree">Técnico Superior en Informática</h4>
+                    <p data-i18n="education_institution">UPTJAA · 2015-2017</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Columna Derecha - Contenido principal -->
+        <main class="main-content">
+            <section class="section">
+                <h2 class="section-title" data-i18n="profile_title">Perfil Profesional</h2>
+                <p class="profile-text" data-i18n="profile_text">
+                    Desarrollador backend con enfoque en <strong>buenas prácticas, código limpio y documentación clara</strong>. 
+                    Capacidad autodidacta demostrada en proyectos personales que integran tecnologías modernas como 
+                    <strong>AI Agents, Model Context Protocol (MCP)</strong> y automatización con Git. Especializado en 
+                    identificar y corregir errores de código, implementar nuevas funcionalidades y documentar cambios 
+                    de forma estructurada. Disponibilidad inmediata para trabajar en <strong>horario España (GMT+1)</strong> desde Brasil.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title" data-i18n="specialization_title">Especialización Técnica</h2>
+                <div class="specialization-grid">
+                    <div class="spec-item">
+                        <h4 data-i18n="spec1_title">🤖 IA y Automatización</h4>
+                        <p data-i18n="spec1_desc">Implementación de AI Agents, Skills Agents y Model Context Protocol (MCP) para optimizar flujos de trabajo backend.</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4 data-i18n="spec2_title">📄 Documentación Inteligente</h4>
+                        <p data-i18n="spec2_desc">Creación de LLMs.txt y agents.md para facilitar onboarding y mantenimiento de proyectos.</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4 data-i18n="spec3_title">🐙 Git Avanzado</h4>
+                        <p data-i18n="spec3_desc">Manejo profesional de Git desde terminal, resolución de conflictos y automatización con GitHub Actions.</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4 data-i18n="spec4_title">🧪 Testing y Calidad</h4>
+                        <p data-i18n="spec4_desc">Pruebas unitarias con PyTest, depuración sistemática y cobertura de código.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title" data-i18n="projects_title">Proyectos Destacados</h2>
+                
+                <article class="project">
+                    <h3 class="project-title" data-i18n="project1_title">Galería Multimedia con Sistema de Tags</h3>
+                    <p class="project-tech" data-i18n="project1_tech">Node.js · Express · MongoDB · JavaScript</p>
+                    <p class="project-description" data-i18n="project1_desc">
+                        Plataforma tipo galería con buscador en tiempo real y sistema de clasificación por tags. 
+                        Implementa subida/descarga de imágenes y persistencia en base de datos. 
+                        Arquitectura MVC y documentación con agents.md.
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h3 class="project-title" data-i18n="project2_title">Simulador de Combates Pokémon</h3>
+                    <p class="project-tech" data-i18n="project2_tech">Python · FastAPI · PokeAPI · PyTest</p>
+                    <p class="project-description" data-i18n="project2_desc">
+                        Cliente API que consume PokeAPI para calcular efectividades de combate, probabilidades de victoria 
+                        y sinergias entre habilidades. Incluye tests unitarios con PyTest y documentación LLMs.txt.
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h3 class="project-title" data-i18n="project3_title">Visualizador Interactivo Matrix</h3>
+                    <p class="project-tech" data-i18n="project3_tech">Python · Tkinter · Event Loop</p>
+                    <p class="project-description" data-i18n="project3_desc">
+                        Simulación de lluvia Matrix en tiempo real, demostrando manejo de event loops, 
+                        animaciones y optimización de rendimiento en Python.
+                    </p>
+                </article>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title" data-i18n="practices_title">Buenas Prácticas y Metodologías</h2>
+                <div class="practices-grid">
+                    <div class="practice-item">
+                        <span class="practice-badge">✅</span>
+                        <span data-i18n="practice1">Patrones MVC y Arquitectura Limpia</span>
+                    </div>
+                    <div class="practice-item">
+                        <span class="practice-badge">✅</span>
+                        <span data-i18n="practice2">Diseño de APIs RESTful</span>
+                    </div>
+                    <div class="practice-item">
+                        <span class="practice-badge">✅</span>
+                        <span data-i18n="practice3">Pruebas Unitarias (PyTest, Jest)</span>
+                    </div>
+                    <div class="practice-item">
+                        <span class="practice-badge">✅</span>
+                        <span data-i18n="practice4">Documentación clara y mantenible</span>
+                    </div>
+                    <div class="practice-item">
+                        <span class="practice-badge">✅</span>
+                        <span data-i18n="practice5">Control de versiones con Git CLI</span>
+                    </div>
+                    <div class="practice-item">
+                        <span class="practice-badge">✅</span>
+                        <span data-i18n="practice6">Comunicación asíncrona en remoto</span>
+                    </div>
+                    <div class="practice-item">
+                        <span class="practice-badge">✅</span>
+                        <span data-i18n="practice7">Integración de IA en flujos backend</span>
+                    </div>
+                    <div class="practice-item">
+                        <span class="practice-badge">✅</span>
+                        <span data-i18n="practice8">Code review y refactoring</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Botón flotante WhatsApp con contador falso -->
+    <a href="https://wa.me/5575981450641?text=Hola%20Yeltsin%20(YinHeaven)%2C%20acabo%20de%20ver%20tu%20CV%20y%20estamos%20muy%20interesados%20en%20tu%20perfil%20para%20la%20posici%C3%B3n%20Backend.%20%C2%BFCu%C3%A1ndo%20podr%C3%ADamos%20agendar%20una%20entrevista%3F" 
+       class="whatsapp-float" target="_blank" id="whatsappButton">
+        <span class="whatsapp-icon">💬</span>
+        <span class="whatsapp-text" data-i18n="whatsapp_text">¿Interesado?</span>
+        <span class="notification-badge" id="whatsappNotification">1</span>
+    </a>
+
+    <!-- Footer para impresión -->
+    <div class="print-footer">
+        CV generado el <span id="printDate"></span> · github.com/YinHeaven · Versión 2026
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
