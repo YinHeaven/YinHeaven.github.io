@@ -7,7 +7,7 @@ const translations = {
         // Perfil
         'location': '📍 Brasil ( PR - Araucaria)',
         'profile_title': 'Perfil Profesional',
-        'profile_text': 'Desarrollador backend con enfoque en buenas prácticas, código limpio y documentación clara. Capacidad autodidacta demostrada en proyectos personales que integran tecnologías modernas como AI Agents, Model Context Protocol (MCP) y automatización con Git. Especializado en identificar y corregir errores de código, implementar nuevas funcionalidades y documentar cambios de forma estructurada. Disponibilidad inmediata para trabajar en horario España (GMT+1) desde Brasil.',
+        'profile_text': 'Desarrollador backend con enfoque en buenas prácticas, código limpio y documentación clara. Capacidad autodidacta demostrada en proyectos personales que integran tecnologías modernas como AI Agents, Model Context Protocol (MCP) y automatización con Git. Especializado en identificar y corregir errores de código, implementar nuevas funcionalidades y documentar cambios de forma estructurada. Disponibilidad inmediata para trabajar.',
         
         // Contacto
         'contact_title': 'Contacto',
@@ -106,7 +106,7 @@ const translations = {
         // Perfil
         'location': '📍 Brasil ( PR - Araucaria)',
         'profile_title': 'Perfil Profissional',
-        'profile_text': 'Desenvolvedor backend com foco em boas práticas, código limpo e documentação clara. Capacidade autodidata demonstrada em projetos pessoais que integram tecnologias modernas como AI Agents, Model Context Protocol (MCP) e automação com Git. Especializado em identificar e corrigir erros de código, implementar novas funcionalidades e documentar mudanças de forma estruturada. Disponibilidade imediata para trabalhar no horário da Espanha (GMT+1) desde o Brasil.',
+        'profile_text': 'Desenvolvedor backend com foco em boas práticas, código limpo e documentação clara. Capacidade autodidata demonstrada em projetos pessoais que integram tecnologias modernas como AI Agents, Model Context Protocol (MCP) e automação com Git. Especializado em identificar e corrigir erros de código, implementar novas funcionalidades e documentar mudanças de forma estruturada. Disponibilidade imediata para trabalhar.',
         
         // Contacto
         'contact_title': 'Contato',
@@ -205,7 +205,7 @@ const translations = {
         // Perfil
         'location': '📍 Brazil ( PR - Araucaria)',
         'profile_title': 'Professional Profile',
-        'profile_text': 'Backend developer focused on best practices, clean code, and clear documentation. Self-taught ability demonstrated in personal projects integrating modern technologies such as AI Agents, Model Context Protocol (MCP), and Git automation. Specialized in identifying and fixing code errors, implementing new features, and documenting changes in a structured way. Immediate availability to work in Spain timezone (GMT+1) from Brazil.',
+        'profile_text': 'Backend developer focused on best practices, clean code, and clear documentation. Self-taught ability demonstrated in personal projects integrating modern technologies such as AI Agents, Model Context Protocol (MCP), and Git automation. Specialized in identifying and fixing code errors, implementing new features, and documenting changes in a structured way. Immediate availability to work.',
         
         // Contacto
         'contact_title': 'Contact',
