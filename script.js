@@ -7,7 +7,7 @@ const translations = {
         // Perfil
         'location': '📍 Brasil ( PR - Araucaria)',
         'profile_title': 'Perfil Profesional',
-        'profile_text': 'Desarrollador backend con enfoque en buenas prácticas, código limpio y documentación clara. Capacidad autodidacta demostrada en proyectos personales que integran tecnologías modernas como AI Agents, Model Context Protocol (MCP) y automatización con Git. Especializado en identificar y corregir errores de código, implementar nuevas funcionalidades y documentar cambios de forma estructurada. Disponibilidad inmediata para trabajar en horario España (GMT+1) desde Brasil.',
+        'profile_text': 'Desarrollador backend con enfoque en buenas prácticas, código limpio y documentación clara. Capacidad autodidacta demostrada en proyectos personales que integran tecnologías modernas como AI Agents, Model Context Protocol (MCP) y automatización con Git. Especializado en identificar y corregir errores de código, implementar nuevas funcionalidades y documentar cambios de forma estructurada. Disponibilidad inmediata.',
         
         // Contacto
         'contact_title': 'Contacto',
@@ -32,6 +32,9 @@ const translations = {
         'education_title': 'Formación',
         'education_degree': 'Técnico Superior en Informática',
         'education_institution': 'UPTJAA · 2015-2017',
+        
+        // NUEVO: Experiencia
+        'experience_title': 'Experiencia Profesional',
         
         // Especialización
         'specialization_title': 'Especialización Técnica',
@@ -104,6 +107,9 @@ const translations = {
         'education_degree': 'Técnico Superior em Informática',
         'education_institution': 'UPTJAA · 2015-2017',
         
+        // NUEVO: Experiência
+        'experience_title': 'Experiência Profissional',
+        
         // Especialização
         'specialization_title': 'Especialização Técnica',
         'spec1_title': '🤖 IA e Automação',
@@ -174,6 +180,9 @@ const translations = {
         'education_title': 'Education',
         'education_degree': 'Higher Technical Degree in Computer Science',
         'education_institution': 'UPTJAA · 2015-2017',
+        
+        // NEW: Experience
+        'experience_title': 'Work Experience',
         
         // Especialización
         'specialization_title': 'Technical Specialization',
