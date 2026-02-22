@@ -55,6 +55,9 @@ const translations = {
         'project3_title': 'Visualizador Interactivo Matrix',
         'project3_tech': 'Python · Tkinter · Event Loop',
         'project3_desc': 'Simulación de lluvia Matrix en tiempo real, demostrando manejo de event loops, animaciones y optimización de rendimiento en Python.',
+        'project4_title': 'Element Warriors: Juego de Combate .io',
+        'project4_tech': 'JavaScript · HTML5 Canvas · Node.js · Socket.io · MongoDB',
+        'project4_desc': 'Juego multijugador .io en tiempo real con recolección de gemas y habilidades dinámicas que cambian según la clase y el elemento. En desarrollo activo: motor propio para edición de mapas y sistema de bots enemigos con inteligencia basada en regresión lineal, permitiendo partidas competitivas con comportamientos adaptativos. Implementa complejas mecánicas de combate, sinergias entre elementos, sistema de progresión y eventos en vivo. Arquitectura cliente-servidor con WebSockets para una experiencia escalable y fluida.',
         
         // Buenas Prácticas
         'practices_title': 'Buenas Prácticas y Metodologías',
@@ -123,6 +126,9 @@ const translations = {
         'project3_title': 'Visualizador Interativo Matrix',
         'project3_tech': 'Python · Tkinter · Event Loop',
         'project3_desc': 'Simulação da chuva Matrix em tempo real, demonstrando manejo de event loops, animações e otimização de performance em Python.',
+        'project4_title': 'Element Warriors: Jogo de Combate .io',
+        'project4_tech': 'JavaScript · HTML5 Canvas · Node.js · Socket.io · MongoDB',
+        'project4_desc': 'Jogo multijogador .io em tempo real com coleta de gemas e habilidades dinâmicas que mudam conforme a classe e o elemento. Em desenvolvimento ativo: motor próprio para edição de mapas e sistema de bots inimigos com inteligência baseada em regressão linear, permitindo partidas competitivas com comportamentos adaptativos. Implementa mecânicas complexas de combate, sinergias entre elementos, sistema de progressão e eventos ao vivo. Arquitetura cliente-servidor com WebSockets para uma experiência escalável e fluida.',
         
         // Boas Práticas
         'practices_title': 'Boas Práticas e Metodologias',
@@ -191,6 +197,9 @@ const translations = {
         'project3_title': 'Matrix Interactive Visualizer',
         'project3_tech': 'Python · Tkinter · Event Loop',
         'project3_desc': 'Real-time Matrix rain simulation, demonstrating event loop handling, animations, and performance optimization in Python.',
+        'project4_title': 'Element Warriors: .io Combat Game',
+        'project4_tech': 'JavaScript · HTML5 Canvas · Node.js · Socket.io · MongoDB',
+        'project4_desc': 'Real-time .io multiplayer game featuring gem collection and dynamic skills that change according to class and element. In active development: custom map editor and enemy bot system with intelligence based on linear regression, enabling competitive matches with adaptive behaviors. Implements complex combat mechanics, elemental synergies, progression system, and live events. Client-server architecture with WebSockets for a scalable and smooth experience.',
         
         // Buenas Prácticas
         'practices_title': 'Best Practices & Methodologies',
