@@ -33,8 +33,33 @@ const translations = {
         'education_degree': 'Técnico Superior en Informática',
         'education_institution': 'UPTJAA · 2015-2017',
         
-        // NUEVO: Experiencia
+        // EXPERIENCIA LABORAL - Títulos y textos completos
         'experience_title': 'Experiencia Profesional',
+        
+        // Chess Player
+        'chess_title': 'Jugador de Ajedrez',
+        'chess_org': 'Federación Venezolana de Ajedrez · Comité Olímpico Venezolano',
+        'chess_date': 'ene. 2009 - actualidad · 17 años 2 meses',
+        'chess_location': 'Caracas, Venezuela · Presencial',
+        'chess_skills': 'Estrategia, Cálculo y pensamiento analítico',
+        
+        // Multicolor
+        'multicolor_title': 'Auxiliar - Multicolor Têxtil LTDA',
+        'multicolor_date': 'oct. 2023 - jul. 2025 · 1 año 10 meses · Rio do Sul, Brasil · Presencial',
+        
+        // ABAE
+        'abae_title': 'Pasante en Gestión de Bases de Datos',
+        'abae_org': 'ABAE - Agencia Bolivariana para Actividades Espaciales · Contrato de prácticas',
+        'abae_date': 'jul. 2020 - dic. 2020 · 6 meses',
+        'abae_location': 'Miranda La Carlota, Caracas, Venezuela · Presencial',
+        'abae_desc': 'Administración y mantenimiento de bases de datos. Desarrollo de scripts y automatización de tareas utilizando Python de forma complementaria.',
+        'abae_skills': 'PostgreSQL · Python · Bases de datos',
+        
+        // ORINOCO DEV
+        'orinoco_title': 'Developer frontend junior - ORINOCO DEV',
+        'orinoco_date': 'Jornada completa · feb. 2018 - abr. 2020 · 2 años 3 meses · Anzoategui, Venezuela · Híbrido',
+        'orinoco_desc': 'Desarrollador Frontend Junior con enfoque en crear interfaces web funcionales y atractivas. Manejo de HTML, CSS, JavaScript y frameworks modernos para transformar diseños en experiencias digitales.',
+        'orinoco_skills': 'JavaScript · HTML5 · CSS',
         
         // Especialización
         'specialization_title': 'Especialización Técnica',
@@ -107,8 +132,33 @@ const translations = {
         'education_degree': 'Técnico Superior em Informática',
         'education_institution': 'UPTJAA · 2015-2017',
         
-        // NUEVO: Experiência
+        // EXPERIÊNCIA LABORAL - Traducción completa al portugués
         'experience_title': 'Experiência Profissional',
+        
+        // Chess Player
+        'chess_title': 'Jogador de Xadrez',
+        'chess_org': 'Federação Venezuelana de Xadrez · Comitê Olímpico Venezuelano',
+        'chess_date': 'jan. 2009 - atual · 17 anos 2 meses',
+        'chess_location': 'Caracas, Venezuela · Presencial',
+        'chess_skills': 'Estratégia, Cálculo e pensamento analítico',
+        
+        // Multicolor
+        'multicolor_title': 'Auxiliar - Multicolor Têxtil LTDA',
+        'multicolor_date': 'out. 2023 - jul. 2025 · 1 ano 10 meses · Rio do Sul, Brasil · Presencial',
+        
+        // ABAE
+        'abae_title': 'Estagiário em Gestão de Bancos de Dados',
+        'abae_org': 'ABAE - Agência Bolivariana para Atividades Espaciais · Contrato de estágio',
+        'abae_date': 'jul. 2020 - dez. 2020 · 6 meses',
+        'abae_location': 'Miranda La Carlota, Caracas, Venezuela · Presencial',
+        'abae_desc': 'Administração e manutenção de bancos de dados. Desenvolvimento de scripts e automação de tarefas utilizando Python de forma complementar.',
+        'abae_skills': 'PostgreSQL · Python · Bancos de dados',
+        
+        // ORINOCO DEV
+        'orinoco_title': 'Desenvolvedor frontend junior - ORINOCO DEV',
+        'orinoco_date': 'Tempo integral · fev. 2018 - abr. 2020 · 2 anos 3 meses · Anzoategui, Venezuela · Híbrido',
+        'orinoco_desc': 'Desenvolvedor Frontend Junior com foco em criar interfaces web funcionais e atrativas. Utilização de HTML, CSS, JavaScript e frameworks modernos para transformar designs em experiências digitais.',
+        'orinoco_skills': 'JavaScript · HTML5 · CSS',
         
         // Especialização
         'specialization_title': 'Especialização Técnica',
@@ -181,8 +231,33 @@ const translations = {
         'education_degree': 'Higher Technical Degree in Computer Science',
         'education_institution': 'UPTJAA · 2015-2017',
         
-        // NEW: Experience
+        // WORK EXPERIENCE - Complete English translation
         'experience_title': 'Work Experience',
+        
+        // Chess Player
+        'chess_title': 'Chess Player',
+        'chess_org': 'Venezuelan Chess Federation · Venezuelan Olympic Committee',
+        'chess_date': 'Jan 2009 - Present · 17 years 2 months',
+        'chess_location': 'Caracas, Venezuela · On-site',
+        'chess_skills': 'Strategy, Calculation, and analytical thinking',
+        
+        // Multicolor
+        'multicolor_title': 'Assistant - Multicolor Têxtil LTDA',
+        'multicolor_date': 'Oct 2023 - Jul 2025 · 1 year 10 months · Rio do Sul, Brazil · On-site',
+        
+        // ABAE
+        'abae_title': 'Database Management Intern',
+        'abae_org': 'ABAE - Bolivarian Agency for Space Activities · Internship Contract',
+        'abae_date': 'Jul 2020 - Dec 2020 · 6 months',
+        'abae_location': 'Miranda La Carlota, Caracas, Venezuela · On-site',
+        'abae_desc': 'Database administration and maintenance. Development of scripts and task automation using Python complementarily.',
+        'abae_skills': 'PostgreSQL · Python · Databases',
+        
+        // ORINOCO DEV
+        'orinoco_title': 'Junior Frontend Developer - ORINOCO DEV',
+        'orinoco_date': 'Full-time · Feb 2018 - Apr 2020 · 2 years 3 months · Anzoategui, Venezuela · Hybrid',
+        'orinoco_desc': 'Junior Frontend Developer focused on creating functional and attractive web interfaces. Proficiency in HTML, CSS, JavaScript, and modern frameworks to transform designs into digital experiences.',
+        'orinoco_skills': 'JavaScript · HTML5 · CSS',
         
         // Especialización
         'specialization_title': 'Technical Specialization',
