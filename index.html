@@ -14,7 +14,6 @@
         <span class="toggle-icon">🌙</span>
     </button>
 
-    <!-- NUEVO: Selector de idiomas -->
     <div class="language-selector">
         <button class="lang-btn active" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="pt">PT</button>
@@ -30,7 +29,7 @@
                 </div>
                 <h1 class="name">Yeltsin Alizo</h1>
                 <h2 class="alias">@YinHeaven</h2>
-                <p class="location" data-i18n="location">📍 Brasil - PR - Araucaria </p>
+                <p class="location" data-i18n="location">📍 Brasil - PR - Araucaria</p>
                 
                 <div class="contact">
                     <h3 data-i18n="contact_title">Contacto</h3>
@@ -134,6 +133,50 @@
                 </p>
             </section>
 
+            <!-- NUEVA SECCIÓN: Experiencia Profesional -->
+            <section class="section">
+                <h2 class="section-title" data-i18n="experience_title">Experiencia Profesional</h2>
+                
+                <!-- Chess Player -->
+                <article class="project">
+                    <h3 class="project-title">Chess Player</h3>
+                    <p class="project-tech">Federación Venezolana de Ajedrez · Comité Olímpico Venezolano</p>
+                    <p class="project-description">
+                        <strong>ene. 2009 - actualidad · 17 años 2 meses</strong><br>
+                        Caracas, Venezuela · Presencial<br>
+                        Estrategia, Cálculo y pensamiento analítico
+                    </p>
+                </article>
+
+                <!-- Multicolor Têxtil LTDA -->
+                <article class="project">
+                    <h3 class="project-title">Auxiliar - Multicolor Têxtil LTDA</h3>
+                    <p class="project-tech">oct. 2023 - jul. 2025 · 1 año 10 meses · Rio do Sul, Brasil · Presencial</p>
+                </article>
+
+                <!-- ABAE -->
+                <article class="project">
+                    <h3 class="project-title">Pasante en Gestión de Bases de Datos</h3>
+                    <p class="project-tech">ABAE - Agencia Bolivariana para Actividades Espaciales · Contrato de prácticas</p>
+                    <p class="project-description">
+                        <strong>jul. 2020 - dic. 2020 · 6 meses</strong><br>
+                        Miranda La Carlota, Caracas, Venezuela · Presencial<br>
+                        Administración y mantenimiento de bases de datos. Desarrollo de scripts y automatización de tareas utilizando Python de forma complementaria.
+                        <br><span style="color: var(--accent-color); display: block; margin-top: 0.5rem;">PostgreSQL · Python · Bases de datos</span>
+                    </p>
+                </article>
+
+                <!-- ORINOCO DEV -->
+                <article class="project">
+                    <h3 class="project-title">Developer frontend junior - ORINOCO DEV</h3>
+                    <p class="project-tech">Jornada completa · feb. 2018 - abr. 2020 · 2 años 3 meses · Anzoategui, Venezuela · Híbrido</p>
+                    <p class="project-description">
+                        Desarrollador Frontend Junior con enfoque en crear interfaces web funcionales y atractivas. Manejo de HTML, CSS, JavaScript y frameworks modernos para transformar diseños en experiencias digitales.
+                        <br><span style="color: var(--accent-color); display: block; margin-top: 0.5rem;">JavaScript · HTML5 · CSS</span>
+                    </p>
+                </article>
+            </section>
+
             <section class="section">
                 <h2 class="section-title" data-i18n="specialization_title">Especialización Técnica</h2>
                 <div class="specialization-grid">
@@ -186,11 +229,12 @@
                         animaciones y optimización de rendimiento en Python.
                     </p>
                 </article>
+
                 <article class="project">
                     <h3 class="project-title" data-i18n="project4_title">Element Warriors: Juego de Combate .io</h3>
                     <p class="project-tech" data-i18n="project4_tech">JavaScript · HTML5 Canvas · Node.js · Socket.io · MongoDB</p>
                     <p class="project-description" data-i18n="project4_desc">
-                         Juego multijugador .io en tiempo real con recolección de gemas y habilidades dinámicas que cambian según la clase y el elemento. 
+                        Juego multijugador .io en tiempo real con recolección de gemas y habilidades dinámicas que cambian según la clase y el elemento. 
                         En desarrollo activo: motor propio para edición de mapas y sistema de bots enemigos con inteligencia basada en regresión lineal, 
                         permitiendo partidas competitivas con comportamientos adaptativos. Implementa complejas mecánicas de combate, sinergias entre elementos, 
                         sistema de progresión y eventos en vivo. Arquitectura cliente-servidor con WebSockets para una experiencia escalable y fluida.
@@ -251,6 +295,6 @@
         CV generado el <span id="printDate"></span> · github.com/YinHeaven · Versión 2026
     </div>
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
