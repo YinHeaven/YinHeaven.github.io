@@ -1,25 +1,32 @@
-// ============================================
-// CONFIGURACIÓN DE TRADUCCIÓN INTELIGENTE
-// ============================================
+// Theme Toggle
+const themeToggle = document.querySelector('.theme-toggle');
+const toggleIcon = document.querySelector('.toggle-icon');
+const html = document.documentElement;
 
+const savedTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', savedTheme);
+toggleIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    toggleIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+});
+
+// Language translations
 const translations = {
     es: {
         // Perfil
-        'location': '📍 Brasil ( PR - Araucaria)',
-        'profile_title': 'Perfil Profesional',
-        'profile_text': 'Desarrollador backend con enfoque en buenas prácticas, código limpio y documentación clara. Capacidad autodidacta demostrada en proyectos personales que integran tecnologías modernas como AI Agents, Model Context Protocol (MCP) y automatización con Git. Especializado en identificar y corregir errores de código, implementar nuevas funcionalidades y documentar cambios de forma estructurada. Disponibilidad inmediata para trabajar.',
-        
-        // Contacto
+        'location': '📍 Brasil - PR - Araucaria',
         'contact_title': 'Contacto',
-        
-        // Skills
         'skills_title': 'Stack Técnico',
         'backend': 'Backend',
         'databases': 'Bases de Datos',
         'devops': 'DevOps y Herramientas',
         'ia': 'IA y Automatización',
-        
-        // Idiomas
         'languages_title': 'Idiomas',
         'spanish': 'Español',
         'portuguese': 'Portugués',
@@ -27,37 +34,43 @@ const translations = {
         'native': 'Nativo',
         'bilingual': 'Bilingüe',
         'technical': 'Técnico',
-        
-        // Educación
         'education_title': 'Formación',
         'education_degree': 'Técnico Superior en Informática',
         'education_institution': 'UPTJAA · 2015-2017',
-        
-        // EXPERIENCIA LABORAL - Títulos y textos completos
+        'profile_title': 'Perfil Profesional',
+        'profile_text': 'Desarrollador backend con enfoque en buenas prácticas, código limpio y documentación clara. Capacidad autodidacta demostrada en proyectos personales que integran tecnologías modernas como AI Agents, Model Context Protocol (MCP) y automatización con Git. Especializado en identificar y corregir errores de código, implementar nuevas funcionalidades y documentar cambios de forma estructurada. Disponibilidad inmediata para trabajar.',
         'experience_title': 'Experiencia Profesional',
         
         // Chess Player
-        'chess_title': 'Jugador de Ajedrez',
+        'chess_title': 'Chess Player',
         'chess_org': 'Federación Venezolana de Ajedrez · Comité Olímpico Venezolano',
         'chess_date': 'ene. 2009',
         'chess_location': 'Caracas, Venezuela · Presencial',
-        'chess_skills': 'Estrategia · Cálculo · Tácticas · Creatividad · Psícologia',
+        'chess_skills': 'Estrategia · Cálculo · Tácticas · Creatividad · Psicología',
         
         // Multicolor
         'multicolor_title': 'Auxiliar - Multicolor Têxtil LTDA',
         'multicolor_date': 'oct. 2023 - jul. 2025 · 1 año 10 meses · Rio do Sul, Brasil · Presencial',
         
-        // ABAE
-        'abae_title': 'Pasante en Gestión de Bases de Datos',
-        'abae_org': 'ABAE - Agencia Bolivariana para Actividades Espaciales · Contrato de prácticas',
-        'abae_date': 'jul. 2020 - dic. 2020 · 6 meses',
-        'abae_location': 'Miranda La Carlota, Caracas, Venezuela · Presencial',
-        'abae_desc': 'Administración y mantenimiento de bases de datos. Desarrollo de scripts y automatización de tareas utilizando Python de forma complementaria.',
-        'abae_skills': 'PostgreSQL · Python · Bases de datos',
+        // ABAE Investigador
+        'abae_investigador_title': 'Investigador (Jornada completa)',
+        'abae_investigador_org': 'ABAE - Agencia Bolivariana para Actividades Espaciales',
+        'abae_investigador_date': 'ene. 2021 - may. 2022 · 1 año 5 meses',
+        'abae_investigador_location': 'Miranda La Carlota, Caracas, Venezuela · Presencia',
+        'abae_investigador_desc': 'Área de investigación desarrollando y manteniendo scripts para procesamiento de datos del sistema satelital y consultas en bases de datos. También configuraba un motor de simulación existente. Aprendí a trabajar con código legacy, documentación técnica y flujos de trabajo en el entorno científico y tecnológico.',
+        'abae_investigador_skills': 'Python · PostgreSQL · JavaScript · Git',
         
-        // ORINOCO DEV
+        // ABAE Pasante
+        'abae_pasante_title': 'Pasante en Gestión de Bases de Datos',
+        'abae_pasante_org': 'ABAE - Agencia Bolivariana para Actividades Espaciales · Contrato de prácticas',
+        'abae_pasante_date': 'jul. 2020 - dic. 2020 · 6 meses',
+        'abae_pasante_location': 'Miranda La Carlota, Caracas, Venezuela · Presencial',
+        'abae_pasante_desc': 'Administración y mantenimiento de bases de datos. Desarrollo de scripts y automatización de tareas utilizando Python de forma complementaria.',
+        'abae_pasante_skills': 'PostgreSQL · Python · Bases de datos',
+        
+        // Orinoco Dev
         'orinoco_title': 'Developer frontend junior - ORINOCO DEV',
-        'orinoco_date': 'Jornada completa · feb. 2016 - abr. 2019 · 3 años 3 meses · Anzoategui, Venezuela · Híbrido',
+        'orinoco_date': 'Jornada completa · feb. 2016 - abr. 2019 · 2 años 3 meses · Anzoategui, Venezuela · Híbrido',
         'orinoco_desc': 'Desarrollador Frontend Junior con enfoque en crear interfaces web funcionales y atractivas. Manejo de HTML, CSS, JavaScript y frameworks modernos para transformar diseños en experiencias digitales.',
         'orinoco_skills': 'JavaScript · HTML5 · CSS',
         
@@ -99,26 +112,18 @@ const translations = {
         'practice8': 'Code review y refactoring',
         
         // WhatsApp
-        'whatsapp_text': '¿Interesado?',
+        'whatsapp_text': '¿Interesado?'
     },
     
     pt: {
         // Perfil
-        'location': '📍 Brasil ( PR - Araucaria)',
-        'profile_title': 'Perfil Profissional',
-        'profile_text': 'Desenvolvedor backend com foco em boas práticas, código limpo e documentação clara. Capacidade autodidata demonstrada em projetos pessoais que integram tecnologias modernas como AI Agents, Model Context Protocol (MCP) e automação com Git. Especializado em identificar e corrigir erros de código, implementar novas funcionalidades e documentar mudanças de forma estruturada. Disponibilidade imediata para trabalhar.',
-        
-        // Contacto
+        'location': '📍 Brasil - PR - Araucaria',
         'contact_title': 'Contato',
-        
-        // Skills
         'skills_title': 'Stack Técnico',
         'backend': 'Backend',
         'databases': 'Bancos de Dados',
         'devops': 'DevOps e Ferramentas',
         'ia': 'IA e Automação',
-        
-        // Idiomas
         'languages_title': 'Idiomas',
         'spanish': 'Espanhol',
         'portuguese': 'Português',
@@ -126,17 +131,15 @@ const translations = {
         'native': 'Nativo',
         'bilingual': 'Bilíngue',
         'technical': 'Técnico',
-        
-        // Educação
         'education_title': 'Formação',
         'education_degree': 'Técnico Superior em Informática',
         'education_institution': 'UPTJAA · 2015-2017',
-        
-        // EXPERIÊNCIA LABORAL - Traducción completa al portugués
+        'profile_title': 'Perfil Profissional',
+        'profile_text': 'Desenvolvedor backend com foco em boas práticas, código limpo e documentação clara. Capacidade autodidata demonstrada em projetos pessoais que integram tecnologias modernas como AI Agents, Model Context Protocol (MCP) e automação com Git. Especializado em identificar e corrigir erros de código, implementar novas funcionalidades e documentar mudanças de forma estruturada. Disponibilidade imediata para trabalhar.',
         'experience_title': 'Experiência Profissional',
         
         // Chess Player
-        'chess_title': 'Jogador de Xadrez',
+        'chess_title': 'Chess Player',
         'chess_org': 'Federação Venezuelana de Xadrez · Comitê Olímpico Venezuelano',
         'chess_date': 'jan. 2009',
         'chess_location': 'Caracas, Venezuela · Presencial',
@@ -146,18 +149,26 @@ const translations = {
         'multicolor_title': 'Auxiliar - Multicolor Têxtil LTDA',
         'multicolor_date': 'out. 2023 - jul. 2025 · 1 ano 10 meses · Rio do Sul, Brasil · Presencial',
         
-        // ABAE
-        'abae_title': 'Estagiário em Gestão de Bancos de Dados',
-        'abae_org': 'ABAE - Agência Bolivariana para Atividades Espaciais · Contrato de estágio',
-        'abae_date': 'jul. 2020 - dez. 2020 · 6 meses',
-        'abae_location': 'Miranda La Carlota, Caracas, Venezuela · Presencial',
-        'abae_desc': 'Administração e manutenção de bancos de dados. Desenvolvimento de scripts e automação de tarefas utilizando Python de forma complementar.',
-        'abae_skills': 'PostgreSQL · Python · Bancos de dados',
+        // ABAE Investigador
+        'abae_investigador_title': 'Pesquisador (Período integral)',
+        'abae_investigador_org': 'ABAE - Agência Bolivariana para Atividades Espaciais',
+        'abae_investigador_date': 'jan. 2021 - mai. 2022 · 1 ano 5 meses',
+        'abae_investigador_location': 'Miranda La Carlota, Caracas, Venezuela · Presencial',
+        'abae_investigador_desc': 'Área de pesquisa desenvolvendo e mantendo scripts para processamento de dados do sistema satelital e consultas em bancos de dados. Também configurava um motor de simulação existente. Aprendi a trabalhar com código legado, documentação técnica e fluxos de trabalho no ambiente científico e tecnológico.',
+        'abae_investigador_skills': 'Python · PostgreSQL · JavaScript · Git',
         
-        // ORINOCO DEV
-        'orinoco_title': 'Desenvolvedor frontend junior - ORINOCO DEV',
-        'orinoco_date': 'Tempo integral · fev. 2016 - abr. 2019 · 3 anos 3 meses · Anzoategui, Venezuela · Híbrido',
-        'orinoco_desc': 'Desenvolvedor Frontend Junior com foco em criar interfaces web funcionais e atrativas. Utilização de HTML, CSS, JavaScript e frameworks modernos para transformar designs em experiências digitais.',
+        // ABAE Pasante
+        'abae_pasante_title': 'Estagiário em Gestão de Bancos de Dados',
+        'abae_pasante_org': 'ABAE - Agência Bolivariana para Atividades Espaciais · Contrato de estágio',
+        'abae_pasante_date': 'jul. 2020 - dez. 2020 · 6 meses',
+        'abae_pasante_location': 'Miranda La Carlota, Caracas, Venezuela · Presencial',
+        'abae_pasante_desc': 'Administração e manutenção de bancos de dados. Desenvolvimento de scripts e automação de tarefas utilizando Python de forma complementar.',
+        'abae_pasante_skills': 'PostgreSQL · Python · Bancos de dados',
+        
+        // Orinoco Dev
+        'orinoco_title': 'Developer frontend junior - ORINOCO DEV',
+        'orinoco_date': 'Período integral · fev. 2016 - abr. 2019 · 2 anos 3 meses · Anzoategui, Venezuela · Híbrido',
+        'orinoco_desc': 'Desenvolvedor Frontend Junior com foco em criar interfaces web funcionais e atrativas. Domínio de HTML, CSS, JavaScript e frameworks modernos para transformar designs em experiências digitais.',
         'orinoco_skills': 'JavaScript · HTML5 · CSS',
         
         // Especialização
@@ -184,7 +195,7 @@ const translations = {
         'project3_desc': 'Simulação da chuva Matrix em tempo real, demonstrando manejo de event loops, animações e otimização de performance em Python.',
         'project4_title': 'Element Warriors: Jogo de Combate .io',
         'project4_tech': 'JavaScript · HTML5 Canvas · Node.js · Socket.io · MongoDB',
-        'project4_desc': 'Jogo multijogador .io em tempo real com coleta de gemas e habilidades dinâmicas que mudam conforme a classe e o elemento. Em desenvolvimento ativo: motor próprio para edição de mapas e sistema de bots inimigos com inteligência baseada em regressão linear, permitindo partidas competitivas com comportamentos adaptativos. Implementa mecânicas complexas de combate, sinergias entre elementos, sistema de progressão e eventos ao vivo. Arquitetura cliente-servidor com WebSockets para uma experiência escalável e fluida.',
+        'project4_desc': 'Jogo multijogador .io em tempo real com coleta de gemas e habilidades dinâmicas que mudam conforme a classe e o elemento. Em desenvolvimento ativo: motor próprio para edição de mapas e sistema de bots inimigos com inteligência baseada em regressão linear, permitindo partidas competitivas com comportamentos adaptativos. Implementa complexas mecânicas de combate, sinergias entre elementos, sistema de progressão e eventos ao vivo. Arquitetura cliente-servidor com WebSockets para uma experiência escalável e fluida.',
         
         // Boas Práticas
         'practices_title': 'Boas Práticas e Metodologias',
@@ -198,26 +209,18 @@ const translations = {
         'practice8': 'Code review e refatoração',
         
         // WhatsApp
-        'whatsapp_text': 'Interessado?',
+        'whatsapp_text': 'Interessado?'
     },
     
     en: {
         // Perfil
-        'location': '📍 Brazil ( PR - Araucaria)',
-        'profile_title': 'Professional Profile',
-        'profile_text': 'Backend developer focused on best practices, clean code, and clear documentation. Self-taught ability demonstrated in personal projects integrating modern technologies such as AI Agents, Model Context Protocol (MCP), and Git automation. Specialized in identifying and fixing code errors, implementing new features, and documenting changes in a structured way. Immediate availability to work.',
-        
-        // Contacto
+        'location': '📍 Brazil - PR - Araucaria',
         'contact_title': 'Contact',
-        
-        // Skills
         'skills_title': 'Tech Stack',
         'backend': 'Backend',
         'databases': 'Databases',
         'devops': 'DevOps & Tools',
         'ia': 'AI & Automation',
-        
-        // Idiomas
         'languages_title': 'Languages',
         'spanish': 'Spanish',
         'portuguese': 'Portuguese',
@@ -225,19 +228,17 @@ const translations = {
         'native': 'Native',
         'bilingual': 'Bilingual',
         'technical': 'Technical',
-        
-        // Educación
         'education_title': 'Education',
         'education_degree': 'Higher Technical Degree in Computer Science',
         'education_institution': 'UPTJAA · 2015-2017',
-        
-        // WORK EXPERIENCE - Complete English translation
-        'experience_title': 'Work Experience',
+        'profile_title': 'Professional Profile',
+        'profile_text': 'Backend developer focused on best practices, clean code, and clear documentation. Self-taught ability demonstrated in personal projects integrating modern technologies such as AI Agents, Model Context Protocol (MCP), and Git automation. Specialized in identifying and fixing code errors, implementing new features, and documenting changes in a structured way. Immediate availability to work.',
+        'experience_title': 'Professional Experience',
         
         // Chess Player
         'chess_title': 'Chess Player',
         'chess_org': 'Venezuelan Chess Federation · Venezuelan Olympic Committee',
-        'chess_date': 'Jan 2009',
+        'chess_date': 'Jan. 2009',
         'chess_location': 'Caracas, Venezuela · On-site',
         'chess_skills': 'Strategy · Calculation · Tactics · Creativity · Psychology',
         
@@ -245,21 +246,29 @@ const translations = {
         'multicolor_title': 'Assistant - Multicolor Têxtil LTDA',
         'multicolor_date': 'Oct 2023 - Jul 2025 · 1 year 10 months · Rio do Sul, Brazil · On-site',
         
-        // ABAE
-        'abae_title': 'Database Management Intern',
-        'abae_org': 'ABAE - Bolivarian Agency for Space Activities · Internship Contract',
-        'abae_date': 'Jul 2020 - Dec 2020 · 6 months',
-        'abae_location': 'Miranda La Carlota, Caracas, Venezuela · On-site',
-        'abae_desc': 'Database administration and maintenance. Development of scripts and task automation using Python complementarily.',
-        'abae_skills': 'PostgreSQL · Python · Databases',
+        // ABAE Researcher
+        'abae_investigador_title': 'Researcher (Full-time)',
+        'abae_investigador_org': 'ABAE - Bolivarian Agency for Space Activities',
+        'abae_investigador_date': 'Jan 2021 - May 2022 · 1 year 5 months',
+        'abae_investigador_location': 'Miranda La Carlota, Caracas, Venezuela · On-site',
+        'abae_investigador_desc': 'Research area developing and maintaining scripts for satellite system data processing and database queries. Also configured an existing simulation engine. Learned to work with legacy code, technical documentation, and workflows in a scientific and technological environment.',
+        'abae_investigador_skills': 'Python · PostgreSQL · JavaScript · Git',
         
-        // ORINOCO DEV
-        'orinoco_title': 'Junior Frontend Developer - ORINOCO DEV',
-        'orinoco_date': 'Full-time · Feb 2016 - Apr 2019 · 3 years 3 months · Anzoategui, Venezuela · Hybrid',
-        'orinoco_desc': 'Junior Frontend Developer focused on creating functional and attractive web interfaces. Proficiency in HTML, CSS, JavaScript, and modern frameworks to transform designs into digital experiences.',
+        // ABAE Intern
+        'abae_pasante_title': 'Database Management Intern',
+        'abae_pasante_org': 'ABAE - Bolivarian Agency for Space Activities · Internship',
+        'abae_pasante_date': 'Jul 2020 - Dec 2020 · 6 months',
+        'abae_pasante_location': 'Miranda La Carlota, Caracas, Venezuela · On-site',
+        'abae_pasante_desc': 'Database administration and maintenance. Script development and task automation using Python.',
+        'abae_pasante_skills': 'PostgreSQL · Python · Databases',
+        
+        // Orinoco Dev
+        'orinoco_title': 'Frontend Developer Junior - ORINOCO DEV',
+        'orinoco_date': 'Full-time · Feb 2016 - Apr 2019 · 2 years 3 months · Anzoategui, Venezuela · Hybrid',
+        'orinoco_desc': 'Junior Frontend Developer focused on creating functional and attractive web interfaces. Proficient in HTML, CSS, JavaScript and modern frameworks to transform designs into digital experiences.',
         'orinoco_skills': 'JavaScript · HTML5 · CSS',
         
-        // Especialización
+        // Specialization
         'specialization_title': 'Technical Specialization',
         'spec1_title': '🤖 AI & Automation',
         'spec1_desc': 'Implementation of AI Agents, Skills Agents, and Model Context Protocol (MCP) to optimize backend workflows.',
@@ -270,7 +279,7 @@ const translations = {
         'spec4_title': '🧪 Testing & Quality',
         'spec4_desc': 'Unit testing with PyTest, systematic debugging, and code coverage.',
         
-        // Proyectos
+        // Projects
         'projects_title': 'Featured Projects',
         'project1_title': 'Media Gallery with Tagging System',
         'project1_tech': 'Node.js · Express · MongoDB · JavaScript',
@@ -283,9 +292,9 @@ const translations = {
         'project3_desc': 'Real-time Matrix rain simulation, demonstrating event loop handling, animations, and performance optimization in Python.',
         'project4_title': 'Element Warriors: .io Combat Game',
         'project4_tech': 'JavaScript · HTML5 Canvas · Node.js · Socket.io · MongoDB',
-        'project4_desc': 'Real-time .io multiplayer game featuring gem collection and dynamic skills that change according to class and element. In active development: custom map editor and enemy bot system with intelligence based on linear regression, enabling competitive matches with adaptive behaviors. Implements complex combat mechanics, elemental synergies, progression system, and live events. Client-server architecture with WebSockets for a scalable and smooth experience.',
+        'project4_desc': 'Real-time multiplayer .io game with gem collection and dynamic abilities that change based on class and element. In active development: custom map editor and enemy bot system with linear regression AI, enabling competitive matches with adaptive behaviors. Implements complex combat mechanics, elemental synergies, progression system, and live events. Client-server architecture with WebSockets for scalable and smooth experience.',
         
-        // Buenas Prácticas
+        // Best Practices
         'practices_title': 'Best Practices & Methodologies',
         'practice1': 'MVC Patterns & Clean Architecture',
         'practice2': 'RESTful API Design',
@@ -297,16 +306,12 @@ const translations = {
         'practice8': 'Code review and refactoring',
         
         // WhatsApp
-        'whatsapp_text': 'Interested?',
+        'whatsapp_text': 'Interested?'
     }
 };
 
-// ============================================
-// FUNCIÓN DE TRADUCCIÓN INTELIGENTE
-// ============================================
-
+// Translation function
 function translatePage(lang) {
-    // Actualizar botones activos
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
         if (btn.dataset.lang === lang) {
@@ -314,131 +319,58 @@ function translatePage(lang) {
         }
     });
 
-    // Guardar preferencia
     localStorage.setItem('preferred-language', lang);
 
-    // Obtener traducciones
     const t = translations[lang];
 
-    // Traducir elementos con data-i18n
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (t[key]) {
-            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                element.placeholder = t[key];
-            } else {
-                element.innerHTML = t[key];
-            }
+            element.innerHTML = t[key];
         }
     });
-
-    // Traducir placeholders específicos
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-        const key = element.getAttribute('data-i18n-placeholder');
-        if (t[key]) {
-            element.placeholder = t[key];
-        }
-    });
-
-    // Actualizar texto del botón WhatsApp
-    const whatsappText = document.querySelector('.whatsapp-text');
-    if (whatsappText) {
-        whatsappText.textContent = t['whatsapp_text'];
-    }
 }
 
-// ============================================
-// INICIALIZACIÓN
-// ============================================
-
+// Initialize language
 document.addEventListener('DOMContentLoaded', function() {
-    // Detectar idioma guardado o usar español por defecto
     const savedLang = localStorage.getItem('preferred-language') || 'es';
-    
-    // Aplicar traducción inicial
     translatePage(savedLang);
     
-    // Event listeners para botones de idioma
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', function() {
-            const lang = this.dataset.lang;
-            translatePage(lang);
+            translatePage(this.dataset.lang);
         });
     });
 });
 
-// ============================================
-// RESTO DEL CÓDIGO EXISTENTE (theme toggle, whatsapp, etc)
-// ============================================
-
-// Theme Toggle con localStorage
-const themeToggle = document.querySelector('.theme-toggle');
-const toggleIcon = document.querySelector('.toggle-icon');
-const html = document.documentElement;
-
-// Verificar tema guardado
-const savedTheme = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', savedTheme);
-toggleIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-
-themeToggle.addEventListener('click', () => {
-    const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    toggleIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-});
-
-// Contador falso de WhatsApp
+// WhatsApp button
 const whatsappBtn = document.getElementById('whatsappButton');
 const notification = document.getElementById('whatsappNotification');
 
-whatsappBtn.addEventListener('click', () => {
-    notification.style.display = 'none';
-    
-    const feedback = document.createElement('div');
-    feedback.textContent = '¡Redirigiendo a WhatsApp...';
-    feedback.style.position = 'fixed';
-    feedback.style.bottom = '100px';
-    feedback.style.right = '30px';
-    feedback.style.backgroundColor = 'var(--whatsapp-color)';
-    feedback.style.color = 'white';
-    feedback.style.padding = '1rem';
-    feedback.style.borderRadius = '8px';
-    feedback.style.zIndex = '1001';
-    feedback.style.animation = 'fadeIn 0.3s';
-    
-    document.body.appendChild(feedback);
-    
-    setTimeout(() => {
-        feedback.remove();
-    }, 2000);
-});
-
-// Animación de entrada
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
+if (whatsappBtn) {
+    whatsappBtn.addEventListener('click', () => {
+        notification.style.display = 'none';
+        
+        const feedback = document.createElement('div');
+        feedback.textContent = 'Redirigiendo a WhatsApp...';
+        feedback.style.position = 'fixed';
+        feedback.style.bottom = '100px';
+        feedback.style.right = '30px';
+        feedback.style.backgroundColor = '#25D366';
+        feedback.style.color = 'white';
+        feedback.style.padding = '1rem';
+        feedback.style.borderRadius = '8px';
+        feedback.style.zIndex = '1001';
+        
+        document.body.appendChild(feedback);
+        
+        setTimeout(() => {
+            feedback.remove();
+        }, 2000);
     });
-}, observerOptions);
+}
 
-document.querySelectorAll('.section').forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(section);
-});
-
-// Actualizar fecha en footer de impresión
+// Print date
 const printDateElement = document.getElementById('printDate');
 if (printDateElement) {
     const today = new Date();
