@@ -39,7 +39,7 @@ const translations = {
         // Chess Player
         'chess_title': 'Jugador de Ajedrez',
         'chess_org': 'Federación Venezolana de Ajedrez · Comité Olímpico Venezolano',
-        'chess_date': 'ene. 2009 - actualidad · 17 años 2 meses',
+        'chess_date': 'ene. 2009',
         'chess_location': 'Caracas, Venezuela · Presencial',
         'chess_skills': 'Estrategia · Cálculo · Tácticas · Creatividad · Psícologia',
         
@@ -138,7 +138,7 @@ const translations = {
         // Chess Player
         'chess_title': 'Jogador de Xadrez',
         'chess_org': 'Federação Venezuelana de Xadrez · Comitê Olímpico Venezuelano',
-        'chess_date': 'jan. 2009 - atual · 17 anos 2 meses',
+        'chess_date': 'jan. 2009',
         'chess_location': 'Caracas, Venezuela · Presencial',
         'chess_skills': 'Estratégia · Cálculo · Táticas · Criatividade · Psicologia',
         
@@ -237,7 +237,7 @@ const translations = {
         // Chess Player
         'chess_title': 'Chess Player',
         'chess_org': 'Venezuelan Chess Federation · Venezuelan Olympic Committee',
-        'chess_date': 'Jan 2009 - Present · 17 years 2 months',
+        'chess_date': 'Jan 2009',
         'chess_location': 'Caracas, Venezuela · On-site',
         'chess_skills': 'Strategy · Calculation · Tactics · Creativity · Psychology',
         
