@@ -57,7 +57,7 @@ const translations = {
         
         // ORINOCO DEV
         'orinoco_title': 'Developer frontend junior - ORINOCO DEV',
-        'orinoco_date': 'Jornada completa · feb. 2018 - abr. 2020 · 2 años 3 meses · Anzoategui, Venezuela · Híbrido',
+        'orinoco_date': 'Jornada completa · feb. 2016 - abr. 2019 · 3 años 3 meses · Anzoategui, Venezuela · Híbrido',
         'orinoco_desc': 'Desarrollador Frontend Junior con enfoque en crear interfaces web funcionales y atractivas. Manejo de HTML, CSS, JavaScript y frameworks modernos para transformar diseños en experiencias digitales.',
         'orinoco_skills': 'JavaScript · HTML5 · CSS',
         
@@ -156,7 +156,7 @@ const translations = {
         
         // ORINOCO DEV
         'orinoco_title': 'Desenvolvedor frontend junior - ORINOCO DEV',
-        'orinoco_date': 'Tempo integral · fev. 2018 - abr. 2020 · 2 anos 3 meses · Anzoategui, Venezuela · Híbrido',
+        'orinoco_date': 'Tempo integral · fev. 2016 - abr. 2019 · 3 anos 3 meses · Anzoategui, Venezuela · Híbrido',
         'orinoco_desc': 'Desenvolvedor Frontend Junior com foco em criar interfaces web funcionais e atrativas. Utilização de HTML, CSS, JavaScript e frameworks modernos para transformar designs em experiências digitais.',
         'orinoco_skills': 'JavaScript · HTML5 · CSS',
         
@@ -255,7 +255,7 @@ const translations = {
         
         // ORINOCO DEV
         'orinoco_title': 'Junior Frontend Developer - ORINOCO DEV',
-        'orinoco_date': 'Full-time · Feb 2018 - Apr 2020 · 2 years 3 months · Anzoategui, Venezuela · Hybrid',
+        'orinoco_date': 'Full-time · Feb 2016 - Apr 2019 · 3 years 3 months · Anzoategui, Venezuela · Hybrid',
         'orinoco_desc': 'Junior Frontend Developer focused on creating functional and attractive web interfaces. Proficiency in HTML, CSS, JavaScript, and modern frameworks to transform designs into digital experiences.',
         'orinoco_skills': 'JavaScript · HTML5 · CSS',
         
