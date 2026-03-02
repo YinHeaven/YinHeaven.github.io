@@ -823,41 +823,56 @@ body {
     opacity: 0.8;
 }
 
-/* ===== HOVER PREVIEW - VERSIÓN FORZADA ===== */
+/* ===== HOVER PREVIEW - VERSIÓN CORREGIDA ===== */
+.certifications {
+    position: relative;
+    overflow: visible !important;  /* Permite que el preview salga del contenedor */
+    z-index: 1;
+}
+
+.cert-grid {
+    overflow: visible !important;
+}
+
+.cert-card {
+    position: relative;
+    overflow: visible !important;
+    z-index: 2;
+}
+
 .cert-hover-preview {
-    position: fixed !important;  /* Forzado para que no dependa del contexto */
-    left: auto !important;
-    right: 20px !important;  /* Ponlo donde no estorbe */
-    top: auto !important;
-    bottom: 20px !important;
-    transform: none !important;
-    width: 80px !important;  /* Tamaño microscópico */
-    margin: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15px;
+    width: 120px;  /* Tamaño pequeño como pediste */
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 0.4rem;
+    box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-color);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.2s ease;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
     pointer-events: none;
-    z-index: 999999 !important;  /* Z-index extremo */
+    z-index: 9999;
 }
 
 .cert-hover-preview img {
-    width: 80px !important;  /* Misma medida que el contenedor */
-    height: auto !important;
+    width: 100%;
+    height: auto;
     border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: block;
+}
+
+.preview-label {
+    display: none;  /* Oculta el texto "Click para ver PDF" si no lo quieres */
 }
 
 .cert-card:hover .cert-hover-preview {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-.cert-card:hover .cert-hover-preview {
     opacity: 1;
-    visibility: visible; 
+    visibility: visible;
 }
 
 /* ===== MODAL PARA PDF ===== */
