@@ -823,7 +823,7 @@ body {
     opacity: 0.8;
 }
 
-/* ===== HOVER PREVIEW (50% MÁS GRANDE) ===== */
+/* ===== HOVER PREVIEW (preview ) ===== */
 .cert-hover-preview {
     position: absolute;
     left: 100%;
@@ -831,7 +831,6 @@ body {
     transform: translateY(-50%) scale(0.8);
     margin-left: 20px;
     width: 300px;
-    /* 50% más grande que la tarjeta (que es ~200px) */
     background: var(--bg-secondary);
     border-radius: 16px;
     padding: 0.75rem;
@@ -840,33 +839,23 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s ease;
-    z-index: 1000;
+    z-index: 999999;  /* ← CAMBIA ESTO a un número MUY alto */
     pointer-events: none;
 }
 
+/* También asegúrate que la tarjeta tenga posición relativa */
+.cert-card {
+    position: relative;  /* ← DEBE tener esto */
+    z-index: 1;  /* ← Puedes agregar esto */
+}
+
+/* Y cuando haces hover, que se mantenga alto */
 .cert-card:hover .cert-hover-preview {
     opacity: 1;
     visibility: visible;
     transform: translateY(-50%) scale(1);
+    z-index: 999999;  /* ← También aquí para asegurar */
 }
-
-.cert-hover-preview img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-    display: block;
-}
-
-.preview-label {
-    display: block;
-    text-align: center;
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.5rem;
-    font-style: italic;
-}
-
 /* ===== MODAL PARA PDF ===== */
 .pdf-modal {
     display: none;
