@@ -823,44 +823,43 @@ body {
     opacity: 0.8;
 }
 
-/* ===== HOVER PREVIEW (preview pequeño) ===== */
+/* ===== HOVER PREVIEW - VERSIÓN FORZADA ===== */
 .cert-hover-preview {
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 15px;
-    width: 120px;  /* Reducido de 300px a 120px - tamaño pequeño */
-    background: var(--bg-secondary);
-    border-radius: 8px;  /* Reducido para mejor escala */
-    padding: 0.4rem;  /* Padding más pequeño */
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
-    border: 1px solid var(--border-color);
+    position: fixed !important;  /* Forzado para que no dependa del contexto */
+    left: auto !important;
+    right: 20px !important;  /* Ponlo donde no estorbe */
+    top: auto !important;
+    bottom: 20px !important;
+    transform: none !important;
+    width: 80px !important;  /* Tamaño microscópico */
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s ease;
     pointer-events: none;
-    z-index: 9999;  /* Aumentado para asegurar que esté sobre todo */
+    z-index: 999999 !important;  /* Z-index extremo */
 }
 
-/* Para que la imagen dentro también sea pequeña */
 .cert-hover-preview img {
-    width: 100%;
-    height: auto;
+    width: 80px !important;  /* Misma medida que el contenedor */
+    height: auto !important;
     border-radius: 4px;
-    display: block;
-}
-
-.cert-card {
-    position: relative;
-    z-index: 1;  /* Establece un contexto base */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .cert-card:hover .cert-hover-preview {
-    opacity: 1;
-    visibility: visible;
-    /* Quitamos el scale(0.4) porque ya tenemos el tamaño correcto */
+    opacity: 1 !important;
+    visibility: visible !important;
 }
+.cert-card:hover .cert-hover-preview {
+    opacity: 1;
+    visibility: visible; 
+}
+
 /* ===== MODAL PARA PDF ===== */
 .pdf-modal {
     display: none;
