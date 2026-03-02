@@ -112,10 +112,9 @@ const translations = {
         'practice8': 'Code review y refactoring',
         
         // WhatsApp
-        'whatsapp_text': '¿Interesado?'
+        'whatsapp_text': '¿Interesado?',
 
-        //certifications
-            
+        // Certifications
         'certifications_title': 'Certificaciones',
         'cert1_title': 'Cursor con Python: desarrollo inteligente con IA',
         'cert1_org': 'Santander | Open Academy · 2026',
@@ -217,7 +216,7 @@ const translations = {
         'practice8': 'Code review e refatoração',
         
         // WhatsApp
-        'whatsapp_text': 'Interessado?'
+        'whatsapp_text': 'Interessado?',
 
         // CERTIFICAÇÕES
         'certifications_title': 'Certificações',
@@ -321,15 +320,15 @@ const translations = {
         'practice8': 'Code review and refactoring',
         
         // WhatsApp
-        'whatsapp_text': 'Interested?'
+        'whatsapp_text': 'Interested?',
 
-        //certifications
+        // Certifications
         'certifications_title': 'Certifications',
         'cert1_title': 'Cursor with Python: AI-powered development',
         'cert1_org': 'Santander | Open Academy · 2026',
         'cert1_serie_prefix': 'Serial N°:',
         'cert_preview': 'Click to view full PDF'
-    },
+    }
 };
 
 // Translation function
@@ -415,7 +414,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (pdfPath) {
                 pdfViewer.src = pdfPath;
                 modal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevenir scroll
+                document.body.style.overflow = 'hidden';
             }
         });
     });
@@ -423,8 +422,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Función para cerrar modal
     function closeModal() {
         modal.classList.remove('active');
-        document.body.style.overflow = ''; // Restaurar scroll
-        // Pequeño retraso para limpiar el src y evitar parpadeos
+        document.body.style.overflow = '';
         setTimeout(() => {
             pdfViewer.src = '';
         }, 300);
