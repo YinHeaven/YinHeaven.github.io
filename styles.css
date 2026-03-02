@@ -843,18 +843,9 @@ z-index: 9999;
 pointer-events: none;
 }
 
-/* También asegúrate que la tarjeta tenga posición relativa */
 .cert-card {
     position: relative;  
-    z-index: 1;  
-}
-
-/* Y cuando haces hover, que se mantenga alto */
-.cert-card:hover .cert-hover-preview {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(-50%) scale(1);
-    z-index: 999999;  /* ← También aquí para asegurar */
+    z-index: 1;
 }
 /* ===== MODAL PARA PDF ===== */
 .pdf-modal {
