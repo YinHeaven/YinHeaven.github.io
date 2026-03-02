@@ -849,6 +849,7 @@ body {
 .cert-card:hover .cert-hover-preview {
     opacity: 1;
     visibility: visible;
+    z-index: 999
 }
 /* ===== MODAL PARA PDF ===== */
 .pdf-modal {
