@@ -113,6 +113,14 @@ const translations = {
         
         // WhatsApp
         'whatsapp_text': '¿Interesado?'
+
+        //certifications
+            
+        'certifications_title': 'Certificaciones',
+        'cert1_title': 'Cursor con Python: desarrollo inteligente con IA',
+        'cert1_org': 'Santander | Open Academy · 2026',
+        'cert1_serie_prefix': 'N° serie:',
+        'cert_preview': 'Click para ver PDF completo'
     },
     
     pt: {
@@ -210,6 +218,13 @@ const translations = {
         
         // WhatsApp
         'whatsapp_text': 'Interessado?'
+
+        // CERTIFICAÇÕES
+        'certifications_title': 'Certificações',
+        'cert1_title': 'Cursor com Python: desenvolvimento inteligente com IA',
+        'cert1_org': 'Santander | Open Academy · 2026',
+        'cert1_serie_prefix': 'N° série:',
+        'cert_preview': 'Clique para ver PDF completo'
     },
     
     en: {
@@ -307,6 +322,13 @@ const translations = {
         
         // WhatsApp
         'whatsapp_text': 'Interested?'
+
+        //certifications
+        'certifications_title': 'Certifications',
+        'cert1_title': 'Cursor with Python: AI-powered development',
+        'cert1_org': 'Santander | Open Academy · 2026',
+        'cert1_serie_prefix': 'Serial N°:',
+        'cert_preview': 'Click to view full PDF'
     }
 };
 
