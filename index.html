@@ -122,7 +122,43 @@
                     <p data-i18n="education_institution">UPTJAA · 2015-2017</p>
                 </div>
             </div>
+
+            <!-- Sección de Certificaciones -->
+            <div class="certifications">
+                <h3 data-i18n="certifications_title">Certificaciones</h3>
+            
+                <div class="cert-grid">
+                    <!-- Certificación Santander Open Academy -->
+                    <div class="cert-card" data-pdf="1986_crowwebom@gmail.com.pdf" data-thumb="cpyia.jpeg"
+                        data-serie="OA-2026-0302002310942">
+                        <div class="cert-icon">🐍</div>
+                        <div class="cert-info">
+                            <h4>Cursor con Python: desarrollo inteligente con IA</h4>
+                            <p class="cert-org">Santander | Open Academy · 2026</p>
+                            <p class="cert-serie">N° serie: OA-2026-0302002310942</p>
+                        </div>
+                        <!-- Preview flotante (50% más grande que la tarjeta) -->
+                        <div class="cert-hover-preview">
+                            <img src="cpyia.jpeg" alt="Preview Certificado Python e IA" loading="lazy">
+                            <span class="preview-label">Click para ver PDF completo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal para ver PDF -->
+            <div class="pdf-modal" id="pdfModal">
+                <div class="modal-overlay"></div>
+                <div class="modal-container">
+                    <button class="modal-close" aria-label="Cerrar">✕</button>
+                    <div class="modal-content">
+                        <iframe id="pdfViewer" class="pdf-viewer" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
         </aside>
+
+        
 
         <!-- Columna Derecha - Contenido principal -->
         <main class="main-content">
