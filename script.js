@@ -377,3 +377,52 @@ if (printDateElement) {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     printDateElement.textContent = today.toLocaleDateString('es-ES', options);
 }
+
+// ===== SISTEMA DE CERTIFICACIONES =====
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('pdfModal');
+    const modalOverlay = document.querySelector('.modal-overlay');
+    const modalClose = document.querySelector('.modal-close');
+    const pdfViewer = document.getElementById('pdfViewer');
+    const certCards = document.querySelectorAll('.cert-card');
+
+    // Abrir modal al hacer click en una certificación
+    certCards.forEach(card => {
+        card.addEventListener('click', function (e) {
+            const pdfPath = this.dataset.pdf;
+            if (pdfPath) {
+                pdfViewer.src = pdfPath;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevenir scroll
+            }
+        });
+    });
+
+    // Función para cerrar modal
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = ''; // Restaurar scroll
+        // Pequeño retraso para limpiar el src y evitar parpadeos
+        setTimeout(() => {
+            pdfViewer.src = '';
+        }, 300);
+    }
+
+    // Cerrar con botón X
+    modalClose.addEventListener('click', closeModal);
+
+    // Cerrar haciendo click en el overlay
+    modalOverlay.addEventListener('click', closeModal);
+
+    // Cerrar con tecla ESC
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+
+    // Prevenir que el click dentro del modal lo cierre
+    document.querySelector('.modal-container').addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+});
