@@ -823,58 +823,48 @@ body {
     opacity: 0.8;
 }
 
-/* ===== HOVER PREVIEW - VERSIÓN CORREGIDA ===== */
-.certifications {
-    position: relative;
-    overflow: visible !important;  /* Permite que el preview salga del contenedor */
-    z-index: 1;
-}
-
-.cert-grid {
-    overflow: visible !important;
-}
-
-.cert-card {
-    position: relative;
-    overflow: visible !important;
-    z-index: 2;
-}
-
+/* ===== HOVER PREVIEW (50% MÁS GRANDE) ===== */
 .cert-hover-preview {
     position: absolute;
     left: 100%;
     top: 50%;
-    transform: translateY(-50%);
-    margin-left: 15px;
-    width: 120px;  /* Tamaño pequeño como pediste */
+    transform: translateY(-50%) scale(0.8);
+    margin-left: 20px;
+    width: 300px; /* 50% más grande que la tarjeta (que es ~200px) */
     background: var(--bg-secondary);
-    border-radius: 8px;
-    padding: 0.4rem;
-    box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    padding: 0.75rem;
+    box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.3);
     border: 1px solid var(--border-color);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
+    transition: all 0.2s ease;
+    z-index: 1000;
     pointer-events: none;
-    z-index: 9999;
-}
-
-.cert-hover-preview img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    display: block;
-}
-
-.preview-label {
-    display: none;  /* Oculta el texto "Click para ver PDF" si no lo quieres */
 }
 
 .cert-card:hover .cert-hover-preview {
     opacity: 1;
     visibility: visible;
+    transform: translateY(-50%) scale(1);
 }
 
+.cert-hover-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: block;
+}
+
+.preview-label {
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
 /* ===== MODAL PARA PDF ===== */
 .pdf-modal {
     display: none;
