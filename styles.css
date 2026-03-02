@@ -839,14 +839,14 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s ease;
-    z-index: 999999;  /* ← CAMBIA ESTO a un número MUY alto */
+    z-index: 9999999; 
     pointer-events: none;
 }
 
 /* También asegúrate que la tarjeta tenga posición relativa */
 .cert-card {
-    position: relative;  /* ← DEBE tener esto */
-    z-index: 1;  /* ← Puedes agregar esto */
+    position: relative;  
+    z-index: 1;  
 }
 
 /* Y cuando haces hover, que se mantenga alto */
