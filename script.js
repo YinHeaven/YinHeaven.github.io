@@ -120,6 +120,16 @@ const translations = {
         'cert1_org': 'Santander | Open Academy · 2026',
         'cert1_serie_prefix': 'N° serie:',
         'cert_preview': 'Click para ver PDF completo'
+
+        'cert2_title': 'Introducción a la Ciencia de Datos',
+        'cert2_org': 'Santander | IEuniversity · 2026',
+        'cert2_serie_prefix': 'N° serie:',
+        'cert2_preview': 'Click para ver PDF completo',
+        
+        'cert3_title': 'Ciencia de la Computación de Harvard en Brasil',
+        'cert3_org': 'fundaçao Educar · 2026',
+        'cert3_serie_prefix': 'N° serie:',
+        'cert3_preview': 'Click para ver PDF completo',
     },
     
     pt: {
@@ -224,6 +234,16 @@ const translations = {
         'cert1_org': 'Santander | Open Academy · 2026',
         'cert1_serie_prefix': 'N° série:',
         'cert_preview': 'Clique para ver PDF completo'
+
+        'cert2_title': 'Introdução à Ciência de Dados',
+        'cert2_org': 'Santander | IEuniversity · 2026',
+        'cert2_serie_prefix': 'N° série:',
+        'cert2_preview': 'Clique para ver PDF completo',
+        
+        'cert3_title': 'Ciência da Computação de Harvard no Brasil',
+        'cert3_org': 'fundaçao Educar · 2026',
+        'cert3_serie_prefix': 'N° série:',
+        'cert3_preview': 'Clique para ver PDF completo',
     },
     
     en: {
@@ -327,7 +347,17 @@ const translations = {
         'cert1_title': 'Cursor with Python: AI-powered development',
         'cert1_org': 'Santander | Open Academy · 2026',
         'cert1_serie_prefix': 'Serial N°:',
-        'cert_preview': 'Click to view full PDF'
+        'cert_preview': 'Click to view full PDF',
+            
+        'cert2_title': 'Introduction to Data Science',
+        'cert2_org': 'Santander | IEuniversity · 2026',
+        'cert2_serie_prefix': 'Serial N°:',
+        'cert2_preview': 'Click to view full PDF',
+        
+        'cert3_title': 'Computer Science from Harvard in Brazil',
+        'cert3_org': 'fundaçao Educar · 2026',
+        'cert3_serie_prefix': 'Serial N°:',
+        'cert3_preview': 'Click to view full PDF',
     }
 };
 
