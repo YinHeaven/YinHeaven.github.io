@@ -119,7 +119,7 @@ const translations = {
         'cert1_title': 'Cursor con Python: desarrollo inteligente con IA',
         'cert1_org': 'Santander | Open Academy · 2026',
         'cert1_serie_prefix': 'N° serie:',
-        'cert_preview': 'Click para ver PDF completo'
+        'cert_preview': 'Click para ver PDF completo'.
 
         'cert2_title': 'Introducción a la Ciencia de Datos',
         'cert2_org': 'Santander | IEuniversity · 2026',
@@ -233,7 +233,7 @@ const translations = {
         'cert1_title': 'Cursor com Python: desenvolvimento inteligente com IA',
         'cert1_org': 'Santander | Open Academy · 2026',
         'cert1_serie_prefix': 'N° série:',
-        'cert_preview': 'Clique para ver PDF completo'
+        'cert_preview': 'Clique para ver PDF completo',
 
         'cert2_title': 'Introdução à Ciência de Dados',
         'cert2_org': 'Santander | IEuniversity · 2026',
