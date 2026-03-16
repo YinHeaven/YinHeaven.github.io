@@ -1041,4 +1041,19 @@ body {
     .cert-card:last-child:hover .cert-hover-preview {
         transform: scale(1);
     }
+
+/* FORZAR PREVIEW ENCIMA DE TODO */
+.cert-card {
+    position: relative;
+    z-index: 1;
+}
+
+.cert-hover-preview {
+    position: absolute;
+    z-index: 999999 !important;
+    /* El resto de tus estilos se mantienen igual */
+}
+
+.cert-card:hover {
+    z-index: 999998 !important;
 }
