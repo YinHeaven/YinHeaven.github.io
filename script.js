@@ -129,7 +129,7 @@ const translations = {
         'cert3_title': 'Ciencia de la Computación de Harvard en Brasil',
         'cert3_org': 'fundaçao Educar · 2026',
         'cert3_serie_prefix': 'N° serie:',
-        'cert3_preview': 'Click para ver PDF completo',
+        'cert3_preview': 'Click para ver PDF completo'
     },
     
     pt: {
@@ -243,7 +243,7 @@ const translations = {
         'cert3_title': 'Ciência da Computação de Harvard no Brasil',
         'cert3_org': 'fundaçao Educar · 2026',
         'cert3_serie_prefix': 'N° série:',
-        'cert3_preview': 'Clique para ver PDF completo',
+        'cert3_preview': 'Clique para ver PDF completo'
     },
     
     en: {
@@ -357,7 +357,7 @@ const translations = {
         'cert3_title': 'Computer Science from Harvard in Brazil',
         'cert3_org': 'fundaçao Educar · 2026',
         'cert3_serie_prefix': 'Serial N°:',
-        'cert3_preview': 'Click to view full PDF',
+        'cert3_preview': 'Click to view full PDF'
     }
 };
 
