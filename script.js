@@ -130,7 +130,7 @@ const translations = {
         'cert3_org': 'fundaçao Educar · 2026',
         'cert3_serie_prefix': 'N° serie:',
         'cert3_preview': 'Click para ver PDF completo'
-    },
+    }
     
     pt: {
         // Perfil
@@ -244,7 +244,7 @@ const translations = {
         'cert3_org': 'fundaçao Educar · 2026',
         'cert3_serie_prefix': 'N° série:',
         'cert3_preview': 'Clique para ver PDF completo'
-    },
+    }
     
     en: {
         // Perfil
@@ -358,7 +358,7 @@ const translations = {
         'cert3_org': 'fundaçao Educar · 2026',
         'cert3_serie_prefix': 'Serial N°:',
         'cert3_preview': 'Click to view full PDF'
-    },
+    }
 };
 
 // Translation function
